@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{soul}% http://ctan.org/pkg/soul
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+\usepackage{tgpagella} % text only
+\usepackage{mathpazo}  % math & text
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+\vspace{-5pt}
+\begin{center}
+    \setul{5pt}{.4pt}
+    \textbf{\Huge \scshape Markus de Medeiros} \\ \vspace{2pt}
+    \small (213)-248-6245 $|$ \href{mailto:mjd9606@nyu.edu}{\ul{mjd9606@nyu.edu}} $|$ 
+    \href{https://www.markusde.ca}{\ul{markusde.ca}} $|$
+    \href{https://github.com/markusdemedeiros}{\ul{github.com/markusdemedeiros}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University, Courant Institute}{New York, NY}
+      {PhD Computer Science, in progress. }{September 2023 -- Present}
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {BSc Combined Honours in Computer Science and Mathematics. }{September 2018 -- April 2023}
+      \resumeItemListStart
+        \resumeItem{Stanley M. Grant Scholarship in Mathematics: 2022. By recommendation of the department.}
+        \resumeItem{Dean's Honour List: 2018-2023. }
+        \resumeItem{NSERC USRA award: 2021, 2023; SURE award: 2022.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Applications of Higher-Order Separation Logic in Probabilistic Verification}{September 2023 -- Present}
+      {with Joseph Tassarotti (NYU)}{}
+      \resumeItemListStart
+        \resumeItem{Verifying security and privacy properties of distributed systems in Coq.}
+        \resumeItem{Expanding the functionality of the Clutch verification framework.}
+        \resumeItem{\textbf{Published} Error Credits: Resourceful Reasoning about Error Bounds for Higher-Order Probabilistic Programs. ICFP (2023). \href{https://dl.acm.org/doi/10.1145/3674635}{\ul{DOI}}. \textbf{ICFP Distinguished Paper Award.}}
+        \resumeItem{\textbf{Published}  Tachis: Higher-Order Separation Logic with Credits for Expected Costs. OOPSLA (2024). \href{https://dl.acm.org/doi/10.1145/3689753}{\ul{DOI}}.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {SampCert: Verified Differential Privacy}{May 2024 -- August 2024}
+      {Amazon Web Services}{}
+      \resumeItemListStart
+        \resumeItem{Develop and deploy a discrete differential privacy library, verified using the Lean 4 theorem prover. }
+        \resumeItem{Verify high-level privacy results, low-level optimizations, and develop a unifying privacy framework. }
+        \resumeItem{\textit{Publication in progress.}}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Coupled Borrows: Automated, Extensible Memory Safety Proofs for Prusti}{May 2022 -- August 2023}
+      {with Alex Summers (UBC), Aurel Bílý (ETH Zurich)}{}
+      \resumeItemListStart
+        \resumeItem{Design a robust semantics for the internal state of the Rust type checker as an external API for verification tools.}
+        \resumeItem{Enable reasoning about lifetimes with complex dataflow and type constraints in Prusti.}
+        \resumeItem{Collaborate with Prusti and Rust developers to balance their evolving design requirements.}
+        \resumeItem{\textbf{BSc. Thesis} and presentation \href{https://www.markusde.ca/pages/bscthesis.html}{\ul{link}}.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Fractional Differential Equations}{May 2021 -- August 2021}
+      {with Jun-cheng Wei (UBC)}{}
+      \resumeItemListStart
+        \resumeItem{Develop numerical simulations of nonlocal differential equations to corroborate our asymptotic theory.}
+        \resumeItem{\textbf{Published} Existence and stability of symmetric and asymmetric patterns for the half-laplacian gierer–meinhardt system in one-dimensional domain. \textit{Mathematical Models and Methods in Applied Sciences (2022)}. \href{https:///dx.doi.org/10.1142/S0218202522500270}{\ul{DOI}}.}
+        \resumeItem{\textbf{Published} Spike Solutions to the Supercritical Fractional Gierer-Meinhardt System. \textit{Journal of Nonlinear Science} (2024). \href{https://doi.org/10.1007/s00332-023-10002-6}{\ul{DOI}}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Teaching Assistantships}{}
+      {University of British Columbia and New York Univeristy}{}
+      \resumeItemListStart
+        \resumeItem{UBC: CPSC 312 \textit{Functional and Logic Programming}, CPSC 421 \textit{Theory of Computation}, CPSC 310 \textit{Software Engineering}, Math 184 \textit{Differential Calculus}}
+        \resumeItem{NYU: CSCI-GA 2110 \textit{Programming Languages}}
+      \resumeItemListEnd
+
+%    \resumeSubheading
+%      {Registration Support Internship}{May 2019 -- August 2019}
+%      {}{Centre for Learning@Home}
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Prusti} $|$ \emph{Rust}}{Present}
+%           \resumeItemListStart
+%             \resumeItem{Prototype analysis tools using the Rust compiler's internal API's.}
+%             \resumeItem{Develop a compiler plugin to rewrite segments of a Rust program's control-flow graph.}
+%         \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Unify} $|$ \emph{Rust}}{May 2022}
+%           \resumeItemListStart
+%             \resumeItem{Develop a generic, rewrite-free unification framework.}
+%        \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Lucid} $|$ \emph{Haskell}}{March 2021}
+%           \resumeItemListStart
+%             \resumeItem{Develop a music visualizer with Haskell and FFMPEG.}
+%        \resumeItemListEnd
+%       % \resumeProjectHeading
+%       %     {\textbf{GrobnerCAD} $|$ \emph{Java}}{March 2020}
+%       %     \resumeItemListStart
+%       %       \resumeItem{Develop a frontend for geometric constraint solving (CAD).}
+%     % \resumeItemListEnd
+%         
+%     \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Rust, OCaml, Haskell, Python, C/C++, Prolog, Java, Typescript } \\
+     \textbf{Verification Tools}{: Lean, Coq, Iris, Prusti, Viper, Z3} \\
+     \textbf{Research Interests}{: Automated reasoning, separation logic, distributed and concurrent verification, functional programming, type systems, verified compilers, systems, differential privacy, security. }
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
