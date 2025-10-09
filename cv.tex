@@ -142,25 +142,35 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+
+
+    \resumeSubheading
+      {Neuron Relational Logic: Verified Kernels for Machine Learning}{May 2025 -- August 2025}
+      {Amazon Web Services}{}
+      \resumeItemListStart
+        \resumeItem{Develop a separation logic for verifying systems-level machine learning programs. }
+        \resumeItem{Organize an ongoing communuity-driven port of the Iris framework to the Lean 4 theorem prover. }
+      \resumeItemListEnd
     
     \resumeSubheading
       {Applications of Higher-Order Separation Logic in Probabilistic Verification}{September 2023 -- Present}
       {with Joseph Tassarotti (NYU)}{}
       \resumeItemListStart
-        \resumeItem{Verifying security and privacy properties of distributed systems in Coq.}
+        \resumeItem{Verifying security and privacy properties of distributed systems in Rocq.}
         \resumeItem{Expanding the functionality of the Clutch verification framework.}
         \resumeItem{\textbf{Published} Error Credits: Resourceful Reasoning about Error Bounds for Higher-Order Probabilistic Programs. ICFP (2023). \href{https://dl.acm.org/doi/10.1145/3674635}{\ul{DOI}}. \textbf{ICFP Distinguished Paper Award.}}
-        \resumeItem{\textbf{Published}  Tachis: Higher-Order Separation Logic with Credits for Expected Costs. OOPSLA (2024). \href{https://dl.acm.org/doi/10.1145/3689753}{\ul{DOI}}.}
+        \resumeItem{\textbf{Published} Tachis: Higher-Order Separation Logic with Credits for Expected Costs. OOPSLA (2024). \href{https://dl.acm.org/doi/10.1145/3689753}{\ul{DOI}}.}
       \resumeItemListEnd
+
     \resumeSubheading
       {SampCert: Verified Differential Privacy}{May 2024 -- August 2024}
       {Amazon Web Services}{}
       \resumeItemListStart
         \resumeItem{Develop and deploy a discrete differential privacy library, verified using the Lean 4 theorem prover. }
         \resumeItem{Verify high-level privacy results, low-level optimizations, and develop a unifying privacy framework. }
-        \resumeItem{\textit{Publication in progress.}}
+        \resumeItem{\textbf{Published} SampCert: Verified Foundations for Differential Privacy. PLDI (2025) \href{https://doi.org/10.1145/3729294}{\ul{DOI}}. \textbf{PLDI Distinguished Artifact Award}}
       \resumeItemListEnd
-      
+
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -176,9 +186,10 @@
       {with Alex Summers (UBC), Aurel Bílý (ETH Zurich)}{}
       \resumeItemListStart
         \resumeItem{Design a robust semantics for the internal state of the Rust type checker as an external API for verification tools.}
-        \resumeItem{Enable reasoning about lifetimes with complex dataflow and type constraints in Prusti.}
-        \resumeItem{Collaborate with Prusti and Rust developers to balance their evolving design requirements.}
+        \resumeItem{Collaborate with Prusti and Rust developers to verify programs with realistic borrowing features.}
+        \resumeItem{to balance their evolving design requirements.}
         \resumeItem{\textbf{BSc. Thesis} and presentation \href{https://www.markusde.ca/pages/bscthesis.html}{\ul{link}}.}
+        \resumeItem{\textbf{Published} Place Capability Graphs: A General-Purpose Model of Rust's Ownership and Borrowing Guarantees. OOPSLA (2025). }
     \resumeItemListEnd
 
     \resumeSubheading
@@ -187,15 +198,14 @@
       \resumeItemListStart
         \resumeItem{Develop numerical simulations of nonlocal differential equations to corroborate our asymptotic theory.}
         \resumeItem{\textbf{Published} Existence and stability of symmetric and asymmetric patterns for the half-laplacian gierer–meinhardt system in one-dimensional domain. \textit{Mathematical Models and Methods in Applied Sciences (2022)}. \href{https:///dx.doi.org/10.1142/S0218202522500270}{\ul{DOI}}.}
-        \resumeItem{\textbf{Published} Spike Solutions to the Supercritical Fractional Gierer-Meinhardt System. \textit{Journal of Nonlinear Science} (2024). \href{https://doi.org/10.1007/s00332-023-10002-6}{\ul{DOI}}.}
+        \resumeItem{\textbf{Published} Spike Solutions to the Supercritical Fractional Gierer-Meinhardt System. \textit{JNS} (2024). \href{https://doi.org/10.1007/s00332-023-10002-6}{\ul{DOI}}.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Teaching Assistantships}{}
       {University of British Columbia and New York Univeristy}{}
       \resumeItemListStart
-        \resumeItem{UBC: CPSC 312 \textit{Functional and Logic Programming}, CPSC 421 \textit{Theory of Computation}, CPSC 310 \textit{Software Engineering}, Math 184 \textit{Differential Calculus}}
-        \resumeItem{NYU: CSCI-GA 2110 \textit{Programming Languages}}
+        \resumeItem{UBC: CPSC 312 \textit{Functional and Logic Programming}, CPSC 421 \textit{Theory of Computation}, CPSC 310 \textit{Software Engineering}, Math 184 \textit{Differential Calculus}. NYU: CSCI-GA 2110 \textit{Programming Languages}.}
       \resumeItemListEnd
 
 %    \resumeSubheading
@@ -239,7 +249,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Rust, OCaml, Haskell, Python, C/C++, Prolog, Java, Typescript } \\
-     \textbf{Verification Tools}{: Lean, Coq, Iris, Prusti, Viper, Z3} \\
+     \textbf{Verification Tools}{: Lean, Rocq/Coq, Iris, Prusti, Viper, Z3} \\
      \textbf{Research Interests}{: Automated reasoning, separation logic, distributed and concurrent verification, functional programming, type systems, verified compilers, systems, differential privacy, security. }
     }}
  \end{itemize}
